@@ -1,0 +1,8 @@
+name: Output issues event details
+on: issues
+jobs:
+  output:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get issue details
+        run: echo "${{ github.event }}"
